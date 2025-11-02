@@ -10,3 +10,6 @@ if condition:
 
 else:
   # false block
+
+
+>> why we need condition because whe we apply a conditon we do a decision making here  abd decison making apply all software build projects
