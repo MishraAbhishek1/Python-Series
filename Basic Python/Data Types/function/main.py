@@ -53,3 +53,51 @@ def square(n):
     return n*n
 
 print(apply(square, 5))
+
+# ✅ 2. Keyword Arguments (Named Arguments)
+def student(name, age):
+    print(name, age)
+
+student("abhishek", 78)
+
+# Q4. Return multiple values
+
+def calculate(a, b):
+    return a+b, a-b, a*b
+
+x, y, z = calculate(10,5)
+print(x, y, z)
+
+
+# *Q5. Variable number of arguments (args)
+def total_price(*args):
+    return sum(args)
+print(total_price(100, 200, 50, 150))
+
+# **Q6. Keyword arguments (kwargs)
+# real world user profile update
+
+def user_profile(**kwargs):
+    return kwargs
+
+print(user_profile(name="Abhishek", age=22, role="Python Developer"))
+
+
+# Q7. Function inside function (Nested Function)
+def outer():
+    def inner():
+        return "Inner function"
+    return inner()
+
+print(outer())
+
+# Q8. Function returning a function
+# (Decorator ka base)
+
+def outer():
+    def inner():
+        return "I am a inner fucntion"
+    return inner
+
+fn = outer()
+print(fn())
